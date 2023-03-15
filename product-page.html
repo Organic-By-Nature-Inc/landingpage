@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Connect to Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/styles.css">
+    <!-- Allow page to display correctly on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script> 
+        $(function(){
+          $("#header").load("/sections/header.html"); 
+          $("#footer").load("/sections/footer.html");
+          $("#pdtabs").load("/sections/product-description-tabs.html");
+        });
+    </script> 
+  </head>
+  <body>
+
+    <!-- ======================= PAGE CONTENT ====================================== -->
+    <!-- This page have duplicated elements that are hidden depending on the mobile/desktop version -->
+    <style>
+      .product-badge {
+        width: 25px;
+        vertical-align: top;
+        margin:5px
+      }
+
+      @media only screen and (max-width: 767px) {
+        .desktopHidden {
+        display: block;
+      }
+      .mobileHidden {
+        display: none;
+      }
+      .mobilePadding {
+        padding: 1rem;
+      }
+        .tableAlign {
+        vertical-align: middle;
+      }
+      }
+      @media only screen and (min-width: 768px) {
+      .desktopHidden {
+        display: none;
+      }
+      .mobileHidden {
+        display: block;
+      }
+        .tableAlign {
+        vertical-align: top;
+      }
+      }
+    </style>
+
+<div class="container">
+            <!-- Logo Img -->
+            <img style="max-width:80px" class="pt-3 img-fluid" src="assets/logo.png" alt="">
+    <div class="row mobilePadding">
+        <div class="col-md-3 col-sm-12 col-xs-12">
+
+          <div class="desktopHidden">
+            <!-- Product Name -->
+            <h1 class="pt-3 js-md" style="font-size: 45px;">Apothe Cherry</h1>
+            <!-- Product Subname -->
+            <h5 class="lora-reg" style="color: #3a5838;">Anti-Aging Sleeping Support</h5>
+          </div>
+
+            <!-- Product Img (Small image) -->
+            <img class="img-fluid mt-3 mb-3" src="https://cdn.shopify.com/s/files/1/2062/5235/products/2111ApotheCherryImage_1328x@2x.png?v=1674691486" alt="Product Image">
+            
+          <div class="desktopHidden js-md">
+            <!-- Reviews -->
+            ★★★★★ 441 Reviews
+            <!-- Spacer Line (Short Description 4: Color of Bar)-->
+            <hr style="height: 3px; color: #910730; opacity: 1;">
+            <!-- Description (Short Description 1) -->
+            Organic super fruit sour/tart cherries are a core Purium product. Apothe-Cherry contains a wide variety of unique antioxidants and phytochemicals to help balance circadian rhythms, support healthy joint function and promote healthy uric acid metabolism.
+          <br><br>
+            <table class="table table-striped table-sm">
+              <tbody>
+                <tr class="tableAlign" style="border-style: hidden">
+                  <th scope="row"></th>
+                  <td class="poppins-bold">Retail Price: $34.95 USD</td>
+                  <td class="poppins-reg">One Time Purchase</td>
+                  <td><a href="#" class="btn mnsrt-bold" style="padding:0 10px; background-color: #5E765D; color:white;">One Time</a></td>
+                </tr>
+                <br>
+                <tr class="tableAlign" style="border-style: hidden">
+                  <th scope="row"></th>
+                  <td class="poppins-bold">Loyal Customer<br>Price: $26.21 USD</td>
+                  <td class="poppins-reg">Subscribe to Save</td>
+                  <td><a href="#" class="btn mnsrt-bold" style="padding:0 10px; background-color: #902156; color:white;">Subscribe</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <br><br>
+          </div>
+
+            <div class="mx-auto d-block" style="max-width: 230px;"> 
+                <!-- Product Label (Long Description 4)-->
+                <img class="img-fluid" src="https://www.puriumcorporate.com/puriumMedia/wp-content/uploads/2023/03/Screenshot-2023-03-10-105412.png" alt="Product Label">
+                <!-- Ingredients -->
+                <p class="p-1 poppins-reg" style="font-size: small; font-weight: 600; margin-bottom: 0;">Ingredients: Organic Sour/Tart Cherry Juice Concentrate</p>
+                <div style="display:inline-block;">
+                <!-- Labels here: vegan, usda organic, non gmo etc. -->
+                <img src="/svg-badges/glutenfree.svg" alt="Gluten-Free" class="product-badge">
+                <img src="/svg-badges/badge-usda.svg" alt=" USDA Organic" class="product-badge">
+                <img src="/svg-badges/Vegan.svg" alt="Vegan" class="product-badge">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+
+            <!-- Short Description 2 Side banner image -->
+            <img class="img-fluid" src="https://www.puriumcorporate.com/puriumMedia/wp-content/uploads/2023/03/Tart-Cherries-Extract-7-1.png" alt="Banner">
+            
+            <div class="mobileHidden">
+              <!-- Product Name -->
+              <h1 class="js-md">Apothe Cherry</h1>
+              <!-- Product Subname -->
+              <h5 class="lora-reg" style="color: #3a5838">Anti-Aging Sleeping Support</h5>
+              <div class="js-md">
+                <!-- Reviews -->
+                ★★★★★ 441 Reviews
+                <!-- Spacer Line (Short Description 4: Color of Bar)-->
+                <hr style="height: 3px; color: #910730; opacity: 1;">
+                <!-- Description (Short Description 1) -->
+                Organic super fruit sour/tart cherries are a core Purium product. Apothe-Cherry contains a wide variety of unique antioxidants and phytochemicals to help balance circadian rhythms, support healthy joint function and promote healthy uric acid metabolism.
+                <br><br>
+              </div>
+              <table class="table table-striped table-sm">
+                <tbody>
+                  <tr class="tableAlign" style="border-style: hidden">
+                    <th scope="row"></th>
+                    <td class="poppins-bold">Retail Price: $34.95 USD</td>
+                    <td class="poppins-reg">One Time Purchase</td>
+                    <td><a href="#" class="btn mnsrt-bold" style="padding:0 10px; background-color: #5E765D; color:white;">One Time</a></td>
+                  </tr>
+                  <br>
+                  <tr class="tableAlign" style="border-style: hidden">
+                    <th scope="row"></th>
+                    <td class="poppins-bold">Loyal Customer<br>Price: $26.21 USD</td>
+                    <td class="poppins-reg">Subscribe to Save</td>
+                    <td><a href="#" class="btn mnsrt-bold" style="padding:0 10px; background-color: #902156; color:white;">Subscribe</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Order Summary -->
+
+      <!-- <div class="col-3">
+          <div class="p-5 poppins-reg" style="background-color: #f0f0f0">
+              <h3 class="js-md">Order Summary</h3>
+              <hr style="height:2px;">
+              Subtotal
+              <hr style="margin: 0;">
+              Shipping
+              <hr style="margin: 0;">
+              Tax
+              <hr style="margin: 0;">
+              Your Total
+              <hr style="margin: 0;">
+              <a href="#" class="mnsrt-bold" style="background-color: #5E765D; color: white; margin: 20px 0; padding:0 15px; float: right;">Continue</a>
+          </div>
+      </div> -->
+
+      <!-- Load Product Description Tabs -->
+      <div id="pdtabs"></div>
+</div>
+
+    <!-- ========================================================================== -->
+
+
+    <!-- Load Footer from another file -->
+    <div id="footer"></div>
+
+
+    <!-- Bootstrap Script -->
+    <script src=
+"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
+</html>
