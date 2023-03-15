@@ -1,0 +1,198 @@
+<style>
+    .responsive-tabs {
+        padding: 1rem;
+    }
+
+    .responsive-tabs .nav-tabs {
+        display: none;
+    }
+    .nav-link {
+        color:#262626;
+    }
+    .nav-link:hover {
+        color:#262626;
+    } 
+    ul.nav.nav-tabs {
+        position: relative;
+        width: fit-content;
+        border: none;
+    }
+    ul.nav.nav-tabs:after {
+        left:0;
+        content: "";
+        position: absolute;
+        width: 11rem;
+        top: 0;
+        transition: left cubic-bezier(.88, -.35, .565, 1.35) .4s;
+        border-radius: 27.5px;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .1);
+        background-color: #910730;
+        height: 100%;
+        z-index: 0;
+    }
+    ul.nav.nav-tabs.left:after {
+        left: 0%;
+    }
+
+    ul.nav.nav-tabs.middle:after {
+        left: 33%;
+    }
+
+    ul.nav.nav-tabs.right:after {
+        left: 67%;
+    }
+    ul.nav.nav-tabs>li.nav-item {
+        display: inline-block;
+        width: 11rem;
+        padding: 12px 0;
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: normal;
+        user-select: none; 
+        text-align: center; 
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        transition: color 600ms;
+        color:#fff;
+        background-color: transparent;
+    }
+    .nav-tabs .nav-link {
+        border: none;
+    }
+
+    @media (min-width: 768px) {
+        .responsive-tabs .nav-tabs {
+            display: flex;
+        }
+
+        .responsive-tabs .card {
+            border: none;
+            padding: 0 1rem;
+        }
+
+        .responsive-tabs .card .card-header {
+            display: none;
+        }
+
+        .responsive-tabs .card .collapse {
+            display: block;
+            background-color: #f0f0f0;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .responsive-tabs .tab-pane {
+            display: block !important;
+            opacity: 1;
+        }
+        .card-header {
+            background-color: #f0f0f0;
+        }
+        .tab-title {
+            text-decoration: none;
+            color:#262626;
+            
+        }
+        .card-header:hover{
+            background-color: #910730;
+        }
+        .tab-title:hover {
+            text-decoration: none;
+            color:white;
+        }
+        .tab-pane {
+            background-color: #f8f8f8;
+        }
+        .tab-title:after {
+            content: "";
+            background: url('https://www.puriumcorporate.com/puriumMedia/wp-content/uploads/2023/03/sort-1.png') no-repeat 100% 50%;
+            display:inline-block;
+            width: 24px;
+            height: 16px;
+            float:right;
+            margin-top: -19px;
+        }
+    }
+</style>
+
+
+
+<div class="container responsive-tabs">
+    <ul class="nav nav-tabs" role="tablist" style="background-color: #E6E6E6;border-radius: 30px;">
+        <li class="nav-item">
+            <a id="tab-A" href="#pane-A" class="nav-link active poppins-reg" data-bs-toggle="tab" role="tab" tab-direction="left">Product Benefits</a>
+        </li>
+        <li class="nav-item">
+            <a id="tab-B" href="#pane-B" class="nav-link poppins-reg" data-bs-toggle="tab" role="tab" tab-direction="middle">Suggested Use</a>
+        </li>
+        <li class="nav-item">
+            <a id="tab-C" href="#pane-C" class="nav-link poppins-reg" data-bs-toggle="tab" role="tab" tab-direction="right">More Information</a>
+        </li>
+    </ul>
+
+    <div id="content" class="tab-content" role="tablist">
+        <div id="pane-A" class="card tab-pane fade show active border-0" role="tabpanel" aria-labelledby="tab-A">
+            <div class="card-header border-0" role="tab" id="heading-A">
+                    <a class="collapsed tab-title" data-bs-toggle="collapse" href="#collapse-A" aria-expanded="true" aria-controls="collapse-A">
+                        <h5 class="mb-0 poppins-reg">Product Benefits</h5>
+                    </a> 
+            </div>
+            <div id="collapse-A" class="collapse" data-bs-parent="#content" role="tabpanel"
+                aria-labelledby="heading-A">
+                <div class="card-body js-reg">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+        </div>
+
+        <div id="pane-B" class="card tab-pane fade border-0" role="tabpanel" aria-labelledby="tab-B">
+            <div class="card-header border-0" role="tab" id="heading-B">
+                    <a class="collapsed tab-title" data-bs-toggle="collapse" href="#collapse-B" aria-expanded="false"
+                        aria-controls="collapse-B">
+                        <h5 class="mb-0 poppins-reg">Suggested Use</h5>
+                    </a>
+            </div>
+            <div id="collapse-B" class="collapse" data-bs-parent="#content" role="tabpanel"
+                aria-labelledby="heading-B">
+                <div class="card-body js-reg">Elementum facilisis leo vel fringilla est ullamcorper eget nulla. Facilisi nullam vehicula ipsum a arcu cursus vitae. Arcu ac tortor dignissim convallis. Id donec ultrices tincidunt arcu non sodales neque. Morbi non arcu risus quis varius. Viverra nam libero justo laoreet sit amet. At urna condimentum mattis pellentesque id. Blandit libero volutpat sed cras. Et tortor at risus viverra adipiscing at in tellus integer. Sem viverra aliquet eget sit amet. Aliquet lectus proin nibh nisl condimentum id. Quisque id diam vel quam. Amet est placerat in egestas erat imperdiet sed euismod nisi. Adipiscing elit ut aliquam purus sit amet luctus.</div>
+            </div>
+        </div>
+
+        <div id="pane-C" class="card tab-pane fade border-0" role="tabpanel" aria-labelledby="tab-C">
+            <div class="card-header border-0" role="tab" id="heading-C">
+                    <a class="collapsed tab-title" data-bs-toggle="collapse" href="#collapse-C" aria-expanded="true" aria-controls="collapse-C">
+                        <h5 class="mb-0 poppins-reg">More Information</h5>
+                    </a>
+            </div>
+            <div id="collapse-C" class="collapse" data-bs-parent="#content" role="tabpanel"
+                aria-labelledby="heading-C">
+                <div class="card-body js-reg">Et malesuada fames ac turpis egestas integer eget aliquet. Lobortis feugiat vivamus at augue eget arcu dictum varius duis. Arcu felis bibendum ut tristique. Morbi tristique senectus et netus et. Est lorem ipsum dolor sit amet consectetur. Pellentesque massa placerat duis ultricies lacus sed turpis tincidunt. Ut faucibus pulvinar elementum integer enim neque. Viverra mauris in aliquam sem fringilla ut. Id aliquet risus feugiat in. Dui faucibus in ornare quam viverra orci sagittis.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+</script><script>
+$(document).ready(function(){
+    $(function() {
+        var taeb = $("ul.nav.nav-tabs");
+        taeb.find(".nav-link").on("click", function() {
+            console.log('click');
+            var $this = $(this);
+
+            if ($this.hasClass("activeb")) return;
+
+            var direction = $this.attr("tab-direction");
+
+            taeb.removeClass("left middle right").addClass(direction);
+            taeb.find(".nav-link.active").removeClass("active");
+            $this.addClass("active");
+        });
+    });
+});
+
+</script>
