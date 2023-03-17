@@ -58,8 +58,8 @@
     </style>
 
 <div class="container">
-            <!-- Logo Img -->
-            <img style="max-width:80px" class="pt-3 img-fluid" src="assets/logo.png" alt="">
+            <!-- Logo Img (Maybe later will be changed for header instead)-->
+            <img style="max-width:80px" class="pt-3 img-fluid" src="assets/logos/logo.png" alt="">
     <div class="row mobilePadding">
         <div class="col-md-3 col-sm-12 col-xs-12">
 
@@ -76,6 +76,7 @@
           <div class="desktopHidden js-md">
             <!-- Reviews -->
             ★★★★★ 441 Reviews
+            <!-- !!! DYNAMIC COLOR !!! short Description 4 would be used to input the color of the spacer bar and Nutrition Facts Border-->
             <!-- Spacer Line (Short Description 4: Color of Bar)-->
             <hr style="height: 3px; color: #910730; opacity: 1;">
             <!-- Description (Short Description 1) -->
@@ -101,9 +102,29 @@
             <br><br>
           </div>
 
+
+
+          <!-- IF PRODUCT CONTAINS MORE THEN 1 ITEM SHOW THIS DROPDOWN -->
+          <!-- !!! DYNAMIC COLOR !!! Short Description 4 would be used to input the color of the spacer bar and Nutrition Facts Border-->
+          <!-- <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div> -->
+
+
+          <!-- LONF DESCRIPTION 4 -->
             <div class="mx-auto d-block" style="max-width: 230px;"> 
-                <!-- Product Label (Long Description 4)-->
-                <img class="img-fluid" src="https://www.puriumcorporate.com/puriumMedia/wp-content/uploads/2023/03/Screenshot-2023-03-10-105412.png" alt="Product Label">
+                <!-- !!! DYNAMIC COLOR !!! Short Description 4 would be used to input the color of the spacer bar and Nutrition Facts Border-->
+                <!-- Product Nutrition Facts (Long Description 4)-->
+                <img class="img-fluid" src="https://www.puriumcorporate.com/puriumMedia/wp-content/uploads/2023/03/Screenshot-2023-03-10-105412.png" alt="Product Nutrition Facts" style="border-radius: 30px; border: 2px solid #910730;">
+                <!-- View Nutrition Label link  -->
+                View Nutrition Label
                 <!-- Ingredients -->
                 <p class="p-1 poppins-reg" style="font-size: small; margin-bottom: 0;">Ingredients: Organic Sour/Tart Cherry Juice Concentrate</p>
                 <div style="display:inline-block;">
@@ -114,19 +135,20 @@
                 </div>
             </div>
         </div>
+        
         <div class="col-md-6 col-sm-12 col-xs-12">
-
             <!-- Short Description 2 Side banner image -->
             <img class="img-fluid" src="https://www.puriumcorporate.com/puriumMedia/wp-content/uploads/2023/03/Tart-Cherries-Extract-7-1.png" alt="Banner">
             
             <div class="mobileHidden">
-              <!-- Product Name -->
+              <!-- Product Name (Product Description)-->
               <h1 class="js-md">Apothe Cherry</h1>
-              <!-- Product Subname -->
+              <!-- Product Subname (Short description 3) -->
               <h5 class="lora-reg" style="color: #3a5838">Anti-Aging Sleeping Support</h5>
               <div class="js-md">
                 <!-- Reviews -->
                 ★★★★★ 441 Reviews
+                <!-- !!! DYNAMIC COLOR !!! Short Description 4 would be used to input the color of the spacer bar and Nutrition Facts Border-->
                 <!-- Spacer Line (Short Description 4: Color of Bar)-->
                 <hr style="height: 3px; color: #910730; opacity: 1;">
                 <!-- Description (Short Description 1) -->
@@ -155,6 +177,9 @@
         </div>
     </div>
 
+
+    <!-- THIS SECTION IS FOR ORDER SUMMARY. It Supposed to pop up from on the right in desktop mode.
+      Debbie said there is already a built in functionality for this, so here is just the transformed frontend-->
     <!-- Order Summary -->
 
       <!-- <div class="col-3">
@@ -173,7 +198,7 @@
           </div>
       </div> -->
 
-      <!-- Load Product Description Tabs -->
+      <!-- Load Product Description Tabs from another file -->
       <div id="pdtabs"></div>
 </div>
 

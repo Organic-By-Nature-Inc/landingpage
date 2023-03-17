@@ -25,6 +25,23 @@ h1 {
     font-weight:400;
 } */
 
+h1, h3{
+   font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+p {
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 500;
+}
+a.btn {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+}
+li {
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 500;
+}
+
 
 
 .js-reg {
